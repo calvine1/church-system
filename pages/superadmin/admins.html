@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Admins</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Super Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../superadmin-dashboard.html">Dashboard</a>
+    <a href="churches.html">Churches</a>
+    <a href="admins.html" class="active">Admins</a>
+    <a href="platform-reports.html">Reports</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Manage Admins</h1>
+      <p>View and manage church admin accounts</p>
+    </div>
+    <div class="topbar-user">
+      <span>Super Admin</span>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Admin Directory</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search admins...">
+      <button class="primary-btn">+ Add Admin</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Admin Name</th>
+            <th>Email</th>
+            <th>Assigned Church</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pastor James</td>
+            <td>james@gracechapel.com</td>
+            <td>Grace Chapel</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Mary Wanjiku</td>
+            <td>mary@faithcentre.com</td>
+            <td>Faith Centre</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Peter Ouma</td>
+            <td>peter@livingwaters.com</td>
+            <td>Living Waters</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

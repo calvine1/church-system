@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamas</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../admin-dashboard.html">Dashboard</a>
+    <a href="members.html">Members</a>
+    <a href="visitors.html">Visitors</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="giving.html">Giving</a>
+    <a href="ministries.html">Ministries</a>
+    <a href="events.html">Events</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="reports.html">Reports</a>
+    <a href="chamas.html" class="active">Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Chamas</h1>
+      <p>Manage church groups, welfare circles and support communities</p>
+    </div>
+    <div class="topbar-user">
+      <span>Church Admin</span>
+    </div>
+  </header>
+
+  <!-- CHAMAS TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Chama Directory</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search chamas...">
+      <button class="primary-btn">+ Add Chama</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Chama Name</th>
+            <th>Leader</th>
+            <th>Members</th>
+            <th>Meeting Day</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Women Welfare Circle</td>
+            <td>Grace Wanjiru</td>
+            <td>28</td>
+            <td>Saturday</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Youth Savings Group</td>
+            <td>Samuel Otieno</td>
+            <td>16</td>
+            <td>Friday</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Men Fellowship Support</td>
+            <td>John Mwangi</td>
+            <td>22</td>
+            <td>Thursday</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

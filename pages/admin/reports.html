@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../admin-dashboard.html">Dashboard</a>
+    <a href="members.html">Members</a>
+    <a href="visitors.html">Visitors</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="giving.html">Giving</a>
+    <a href="ministries.html">Ministries</a>
+    <a href="events.html">Events</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="reports.html" class="active">Reports</a>
+    <a href="chamas.html">Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Reports</h1>
+      <p>View church performance and summary reports</p>
+    </div>
+    <div class="topbar-user">
+      <span>Church Admin</span>
+    </div>
+  </header>
+
+  <!-- REPORT STATS -->
+  <section class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Members</h3>
+      <p>1,245</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Visitors</h3>
+      <p>89</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Giving</h3>
+      <p>Ksh 1.2M</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Attendance Rate</h3>
+      <p>87%</p>
+    </div>
+  </section>
+
+  <!-- REPORT TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Recent Report Activity</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Report Type</th>
+            <th>Summary</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-04-01</td>
+            <td>Attendance Report</td>
+            <td>Sunday service attendance updated</td>
+            <td><span class="status active-status">Generated</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-30</td>
+            <td>Giving Report</td>
+            <td>Monthly giving summary completed</td>
+            <td><span class="status active-status">Generated</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-28</td>
+            <td>Membership Report</td>
+            <td>New member growth pending review</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

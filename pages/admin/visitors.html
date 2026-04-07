@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitors</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../admin-dashboard.html">Dashboard</a>
+    <a href="members.html">Members</a>
+    <a href="visitors.html" class="active">Visitors</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="giving.html">Giving</a>
+    <a href="ministries.html">Ministries</a>
+    <a href="events.html">Events</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="reports.html">Reports</a>
+    <a href="chamas.html">Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Visitors</h1>
+      <p>Track and manage church visitors</p>
+    </div>
+    <div class="topbar-user">
+      <span>Church Admin</span>
+    </div>
+  </header>
+
+  <!-- VISITORS TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Visitor Directory</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search visitors...">
+      <button class="primary-btn">+ Add Visitor</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Phone</th>
+            <th>Date Visited</th>
+            <th>Invited By</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Faith Njeri</td>
+            <td>0711223344</td>
+            <td>2026-03-30</td>
+            <td>Grace Wanjiru</td>
+            <td><span class="status active-status">Followed Up</span></td>
+          </tr>
+          <tr>
+            <td>Kevin Otieno</td>
+            <td>0722334455</td>
+            <td>2026-03-28</td>
+            <td>John Mwangi</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+          <tr>
+            <td>Mercy Akinyi</td>
+            <td>0733445566</td>
+            <td>2026-03-25</td>
+            <td>Samuel Otieno</td>
+            <td><span class="status active-status">Followed Up</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

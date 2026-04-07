@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Attendance</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Member Portal</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../member-dashboard.html">Dashboard</a>
+    <a href="profile.html">My Profile</a>
+    <a href="my-attendance.html" class="active">My Attendance</a>
+    <a href="my-giving.html">My Giving</a>
+    <a href="my-ministries.html">My Ministries</a>
+    <a href="my-events.html">My Events</a>
+    <a href="my-notifications.html">Notifications</a>
+    <a href="my-chamas.html">My Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>My Attendance</h1>
+      <p>View your church attendance history</p>
+    </div>
+    <div class="topbar-user">
+      <span>Member Portal</span>
+    </div>
+  </header>
+
+  <!-- ATTENDANCE TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Attendance History</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Service Type</th>
+            <th>Location</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-03-30</td>
+            <td>Sunday Service</td>
+            <td>Main Sanctuary</td>
+            <td><span class="status active-status">Present</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-23</td>
+            <td>Sunday Service</td>
+            <td>Main Sanctuary</td>
+            <td><span class="status active-status">Present</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-16</td>
+            <td>Midweek Service</td>
+            <td>Church Hall</td>
+            <td><span class="status pending-status">Absent</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

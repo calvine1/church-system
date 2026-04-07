@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Super Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="superadmin-dashboard.html" class="active">Dashboard</a>
+    <a href="pages/superadmin/churches.html">Churches</a>
+    <a href="pages/superadmin/admins.html">Admins</a>
+    <a href="pages/superadmin/platform-reports.html">Reports</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Super Admin Dashboard</h1>
+      <p>Manage all churches and platform activities</p>
+    </div>
+    <div class="topbar-user">
+      <span>Welcome, Super Admin</span>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Churches</h3>
+      <p>24</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Admins</h3>
+      <p>18</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Members</h3>
+      <p>4,560</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Active Plans</h3>
+      <p>20</p>
+    </div>
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Quick Actions</h2>
+    </div>
+
+    <div class="action-buttons">
+      <a href="pages/superadmin/churches.html" class="primary-btn">Manage Churches</a>
+      <a href="pages/superadmin/admins.html" class="primary-btn">Manage Admins</a>
+      <a href="pages/superadmin/platform-reports.html" class="primary-btn">View Reports</a>
+    </div>
+  </section>
+
+  <!-- RECENT CHURCHES -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Recently Added Churches</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Church Name</th>
+            <th>Location</th>
+            <th>Admin</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grace Chapel</td>
+            <td>Nairobi</td>
+            <td>Pastor James</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Friends Church</td>
+            <td>Nairobi</td>
+            <td>Mary Wanjiku</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Living Waters</td>
+            <td>Kisumu</td>
+            <td>Peter Ouma</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="js/script.js"></script></body>
+</html>

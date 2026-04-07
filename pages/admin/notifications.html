@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../admin-dashboard.html">Dashboard</a>
+    <a href="members.html">Members</a>
+    <a href="visitors.html">Visitors</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="giving.html">Giving</a>
+    <a href="ministries.html">Ministries</a>
+    <a href="events.html">Events</a>
+    <a href="notifications.html" class="active">Notifications</a>
+    <a href="reports.html">Reports</a>
+    <a href="chamas.html">Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Notifications</h1>
+      <p>Manage church announcements and member communication</p>
+    </div>
+    <div class="topbar-user">
+      <span>Church Admin</span>
+    </div>
+  </header>
+
+  <!-- NOTIFICATIONS TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Notification Center</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search notifications...">
+      <button class="primary-btn">+ Send Notification</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Audience</th>
+            <th>Date Sent</th>
+            <th>Channel</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sunday Service Reminder</td>
+            <td>All Members</td>
+            <td>2026-04-01</td>
+            <td>SMS</td>
+            <td><span class="status active-status">Sent</span></td>
+          </tr>
+          <tr>
+            <td>Youth Fellowship Update</td>
+            <td>Youth Ministry</td>
+            <td>2026-03-30</td>
+            <td>Email</td>
+            <td><span class="status active-status">Sent</span></td>
+          </tr>
+          <tr>
+            <td>Choir Practice Notice</td>
+            <td>Choir</td>
+            <td>2026-03-28</td>
+            <td>App</td>
+            <td><span class="status pending-status">Draft</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

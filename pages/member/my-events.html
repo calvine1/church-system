@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Events</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Member Portal</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../member-dashboard.html">Dashboard</a>
+    <a href="profile.html">My Profile</a>
+    <a href="my-attendance.html">My Attendance</a>
+    <a href="my-giving.html">My Giving</a>
+    <a href="my-ministries.html">My Ministries</a>
+    <a href="my-events.html" class="active">My Events</a>
+    <a href="my-notifications.html">Notifications</a>
+    <a href="my-chamas.html">My Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>My Events</h1>
+      <p>View church events and upcoming activities</p>
+    </div>
+    <div class="topbar-user">
+      <span>Member Portal</span>
+    </div>
+  </header>
+
+  <!-- EVENTS TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Upcoming Events</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Department</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Youth Revival Night</td>
+            <td>2026-04-10</td>
+            <td>Main Sanctuary</td>
+            <td>Youth</td>
+            <td><span class="status active-status">Upcoming</span></td>
+          </tr>
+          <tr>
+            <td>Choir Practice</td>
+            <td>2026-04-05</td>
+            <td>Church Hall</td>
+            <td>Choir</td>
+            <td><span class="status active-status">Scheduled</span></td>
+          </tr>
+          <tr>
+            <td>Women Fellowship</td>
+            <td>2026-04-15</td>
+            <td>Prayer Room</td>
+            <td>Women Ministry</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

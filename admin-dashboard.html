@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Church Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="admin-dashboard.html" class="active">Dashboard</a>
+    <a href="pages/admin/members.html">Members</a>
+    <a href="pages/admin/visitors.html">Visitors</a>
+    <a href="pages/admin/attendance.html">Attendance</a>
+    <a href="pages/admin/giving.html">Giving</a>
+    <a href="pages/admin/ministries.html">Ministries</a>
+    <a href="pages/admin/events.html">Events</a>
+    <a href="pages/admin/notifications.html">Notifications</a>
+    <a href="pages/admin/reports.html">Reports</a>
+    <a href="pages/admin/chamas.html">Chamas</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Church Admin Dashboard</h1>
+      <p>Manage your church operations in one place</p>
+    </div>
+    <div class="topbar-user">
+      <span>Welcome, Admin</span>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats-grid">
+    <div class="stat-card">
+      <h3>Total Members</h3>
+      <p>1,245</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Visitors</h3>
+      <p>89</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Giving This Month</h3>
+      <p>Ksh 245K</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Upcoming Events</h3>
+      <p>6</p>
+    </div>
+  </section>
+
+  <!-- QUICK ACTIONS -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Quick Actions</h2>
+    </div>
+
+    <div class="action-buttons">
+      <a href="pages/admin/members.html" class="primary-btn">Manage Members</a>
+      <a href="pages/admin/visitors.html" class="primary-btn">Manage Visitors</a>
+      <a href="pages/admin/giving.html" class="primary-btn">Manage Giving</a>
+      <a href="pages/admin/events.html" class="primary-btn">Manage Events</a>
+    </div>
+  </section>
+
+  <!-- RECENT ACTIVITY -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Recent Church Activity</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Activity</th>
+            <th>Department</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-04-01</td>
+            <td>New Member Registered</td>
+            <td>Membership</td>
+            <td><span class="status active-status">Completed</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-30</td>
+            <td>Visitor Follow-up Added</td>
+            <td>Visitors</td>
+            <td><span class="status active-status">Completed</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-28</td>
+            <td>Youth Event Created</td>
+            <td>Events</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="js/script.js"></script></body>
+</html>

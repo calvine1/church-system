@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Member Portal</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="member-dashboard.html" class="active">Dashboard</a>
+    <a href="pages/member/profile.html">My Profile</a>
+    <a href="pages/member/my-attendance.html">My Attendance</a>
+    <a href="pages/member/my-giving.html">My Giving</a>
+    <a href="pages/member/my-ministries.html">My Ministries</a>
+    <a href="pages/member/my-events.html">My Events</a>
+    <a href="pages/member/my-notifications.html">Notifications</a>
+    <a href="pages/member/my-chamas.html">My Chamas</a>
+    <a href="index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Member Dashboard</h1>
+      <p>Welcome to your church member portal</p>
+    </div>
+    <div class="topbar-user">
+      <span>Welcome, Member</span>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats-grid">
+    <div class="stat-card">
+      <h3>Attendance This Month</h3>
+      <p>4</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Giving</h3>
+      <p>Ksh 12,500</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Upcoming Events</h3>
+      <p>3</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>My Ministries</h3>
+      <p>2</p>
+    </div>
+  </section>
+
+  <!-- QUICK OVERVIEW -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>My Overview</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Latest Update</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Attendance</td>
+            <td>Present on Sunday Service</td>
+            <td><span class="status active-status">Updated</span></td>
+          </tr>
+          <tr>
+            <td>Giving</td>
+            <td>Tithe recorded - Ksh 2,000</td>
+            <td><span class="status active-status">Recorded</span></td>
+          </tr>
+          <tr>
+            <td>Event</td>
+            <td>Youth Revival Night upcoming</td>
+            <td><span class="status pending-status">Upcoming</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="js/script.js"></script></body>
+</html>

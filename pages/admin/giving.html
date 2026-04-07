@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giving</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../admin-dashboard.html">Dashboard</a>
+    <a href="members.html">Members</a>
+    <a href="visitors.html">Visitors</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="giving.html" class="active">Giving</a>
+    <a href="ministries.html">Ministries</a>
+    <a href="events.html">Events</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="reports.html">Reports</a>
+    <a href="chamas.html">Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Giving</h1>
+      <p>Track and manage church giving records</p>
+    </div>
+    <div class="topbar-user">
+      <span>Church Admin</span>
+    </div>
+  </header>
+
+  <!-- GIVING TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Giving Records</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search giving records...">
+      <button class="primary-btn">+ Record Giving</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Member Name</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Mwangi</td>
+            <td>Tithe</td>
+            <td>Ksh 5,000</td>
+            <td>2026-03-30</td>
+            <td><span class="status active-status">Received</span></td>
+          </tr>
+          <tr>
+            <td>Grace Wanjiru</td>
+            <td>Offering</td>
+            <td>Ksh 2,000</td>
+            <td>2026-03-30</td>
+            <td><span class="status active-status">Received</span></td>
+          </tr>
+          <tr>
+            <td>Samuel Otieno</td>
+            <td>Donation</td>
+            <td>Ksh 10,000</td>
+            <td>2026-03-28</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

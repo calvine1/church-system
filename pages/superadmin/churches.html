@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Churches</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Super Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../superadmin-dashboard.html">Dashboard</a>
+    <a href="churches.html" class="active">Churches</a>
+    <a href="admins.html">Admins</a>
+    <a href="platform-reports.html">Reports</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Manage Churches</h1>
+      <p>View and manage all registered churches</p>
+    </div>
+    <div class="topbar-user">
+      <span>Super Admin</span>
+    </div>
+  </header>
+
+  <!-- CONTROLS -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Church Directory</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search churches...">
+      <button class="primary-btn">+ Add Church</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Church Name</th>
+            <th>Location</th>
+            <th>Admin</th>
+            <th>Members</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grace Chapel</td>
+            <td>Nairobi</td>
+            <td>Pastor James</td>
+            <td>320</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Faith Centre</td>
+            <td>Mombasa</td>
+            <td>Mary Wanjiku</td>
+            <td>180</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Living Waters</td>
+            <td>Kisumu</td>
+            <td>Peter Ouma</td>
+            <td>210</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

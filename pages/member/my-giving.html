@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Giving</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Member Portal</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../member-dashboard.html">Dashboard</a>
+    <a href="profile.html">My Profile</a>
+    <a href="my-attendance.html">My Attendance</a>
+    <a href="my-giving.html" class="active">My Giving</a>
+    <a href="my-ministries.html">My Ministries</a>
+    <a href="my-events.html">My Events</a>
+    <a href="my-notifications.html">Notifications</a>
+    <a href="my-chamas.html">My Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>My Giving</h1>
+      <p>View your personal giving history</p>
+    </div>
+    <div class="topbar-user">
+      <span>Member Portal</span>
+    </div>
+  </header>
+
+  <!-- GIVING TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Giving Records</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Reference</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-03-30</td>
+            <td>Tithe</td>
+            <td>Ksh 2,000</td>
+            <td>TXN-1001</td>
+            <td><span class="status active-status">Recorded</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-23</td>
+            <td>Offering</td>
+            <td>Ksh 1,000</td>
+            <td>TXN-1002</td>
+            <td><span class="status active-status">Recorded</span></td>
+          </tr>
+          <tr>
+            <td>2026-03-16</td>
+            <td>Donation</td>
+            <td>Ksh 5,000</td>
+            <td>TXN-1003</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>

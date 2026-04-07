@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministries</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>  <div class="dashboard-layout"><!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h2>ChurchSys</h2>
+    <p>Church Admin</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a href="../../admin-dashboard.html">Dashboard</a>
+    <a href="members.html">Members</a>
+    <a href="visitors.html">Visitors</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="giving.html">Giving</a>
+    <a href="ministries.html" class="active">Ministries</a>
+    <a href="events.html">Events</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="reports.html">Reports</a>
+    <a href="chamas.html">Chamas</a>
+    <a href="../../index.html">Logout</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div>
+      <h1>Ministries</h1>
+      <p>Manage church ministries and departments</p>
+    </div>
+    <div class="topbar-user">
+      <span>Church Admin</span>
+    </div>
+  </header>
+
+  <!-- MINISTRIES TABLE -->
+  <section class="section-card">
+    <div class="section-header">
+      <h2>Ministry Directory</h2>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search-box" placeholder="Search ministries...">
+      <button class="primary-btn">+ Add Ministry</button>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Ministry Name</th>
+            <th>Leader</th>
+            <th>Members</th>
+            <th>Meeting Day</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Choir</td>
+            <td>Grace Wanjiru</td>
+            <td>24</td>
+            <td>Saturday</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Youth</td>
+            <td>Samuel Otieno</td>
+            <td>40</td>
+            <td>Friday</td>
+            <td><span class="status active-status">Active</span></td>
+          </tr>
+          <tr>
+            <td>Ushering</td>
+            <td>John Mwangi</td>
+            <td>15</td>
+            <td>Sunday</td>
+            <td><span class="status pending-status">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+  </div>  <script src="../../js/script.js"></script></body>
+</html>
