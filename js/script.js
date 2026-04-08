@@ -1,41 +1,3 @@
-/* =========================
-ROLE-BASED LOGIN SYSTEM
-========================= */
-
-const loginForm = document.getElementById('loginForm');
-
-if(loginForm){
-loginForm.addEventListener('submit', function(e){
-e.preventDefault();
-
-const username = document.getElementById('username').value.trim().toLowerCase();
-const password = document.getElementById('password').value.trim();
-
-// SUPER ADMIN
-if(username === "superadmin" && password === "1234"){
-  alert("Welcome Super Admin");
-  window.location.href = "superadmin-dashboard.html";
-}
-
-// CHURCH ADMIN
-else if(username === "admin" && password === "1234"){
-  alert("Welcome Church Admin");
-  window.location.href = "admin-dashboard.html";
-}
-
-// MEMBER
-else if(username === "member" && password === "1234"){
-  alert("Welcome Member");
-  window.location.href = "member-dashboard.html";
-}
-
-// INVALID LOGIN
-else{
-  alert("Invalid username or password");
-}
-
-});
-}
 /* =========================================================
    CHURCH MANAGEMENT SYSTEM - FINAL SCRIPT
    ========================================================= */
@@ -48,8 +10,6 @@ const loginForm = document.getElementById("loginForm");
 if (loginForm) {
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
-
-    // For now, any login goes to role selection
     window.location.href = "select-role.html";
   });
 }
@@ -82,7 +42,10 @@ const currentPage = window.location.pathname.split("/").pop();
 const sidebarLinks = document.querySelectorAll(".sidebar-nav a");
 
 sidebarLinks.forEach((link) => {
-  const linkPage = link.getAttribute("href").split("/").pop();
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  const linkPage = href.split("/").pop();
 
   if (linkPage === currentPage) {
     link.classList.add("active");
@@ -106,7 +69,6 @@ document.addEventListener("keydown", function (e) {
 
 /* =========================
    SEARCH TABLES
-   Works for pages with .search-box
 ========================= */
 const searchBoxes = document.querySelectorAll(".search-box");
 
@@ -130,7 +92,6 @@ searchBoxes.forEach((input) => {
 
 /* =========================
    PLACEHOLDER BUTTON ALERTS
-   For frontend demo buttons only
 ========================= */
 const actionButtons = document.querySelectorAll(".primary-btn");
 
@@ -140,18 +101,4 @@ actionButtons.forEach((btn) => {
   });
 });
 
-/* =========================
-   OPTIONAL TABLE ROW HOVER EFFECT
-========================= */
-const tableRows = document.querySelectorAll(".data-table tbody tr");
-
-tableRows.forEach((row) => {
-  row.addEventListener("mouseenter", () => {
-    row.style.transition = "0.2s ease";
-  });
-});
-
-/* =========================
-   SIMPLE PAGE LOAD LOG
-========================= */
 console.log("Church Management System loaded successfully.");
