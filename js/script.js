@@ -10,7 +10,23 @@ const loginForm = document.getElementById("loginForm");
 if (loginForm) {
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    window.location.href = "select-role.html";
+
+    const username = document.getElementById("username").value.trim().toLowerCase();
+    const password = document.getElementById("password").value.trim();
+
+    // Allow any password for demo/frontend purposes
+    if (username === "superadmin") {
+      window.location.href = "superadmin-dashboard.html";
+    } else if (username === "admin") {
+      window.location.href = "admin-dashboard.html";
+    } else if (username === "member") {
+      window.location.href = "member-dashboard.html";
+    } else if (username !== "" && password !== "") {
+      // If user enters anything else but fills fields, go to role selection
+      window.location.href = "select-role.html";
+    } else {
+      alert("Please enter username and password.");
+    }
   });
 }
 
